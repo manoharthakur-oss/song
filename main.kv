@@ -1,0 +1,71 @@
+
+#: import Links urls
+
+<ScrManager>:
+	id: Screens
+	HomeScreen:
+	IntroScreen:
+		
+		
+<UpperTools>:	
+	
+	
+
+	
+	
+<HomeScreen>:
+	Hbox:
+		UpperTools:
+			title:"ABSDEFGHI"
+			left_action_items:[["arrow-left", lambda x:  print("successful")]]
+		Hbox:
+			ScrollView:
+				ListView:
+					ListItemI:
+						on_release: root.Screens.current= "Introduction"
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					ListItemI:
+					
+
+<HomeScreen>:
+	name:"Introduction"
+	Hbox:
+		UpperTools:
+		Hbox:
+			
+<IntroScreen>:
+	name:"Introduction"
+	Hbox:
+		UpperTools:
+		Hbox:
+
+<UpperTools>:
+	title:"UNIQUE TITLE"
+	left_action_items:[["menu", lambda x:  print("successful")]]
+
+
+<Hbox>:
+	orientation :"vertical"
+	
+<Vbox>:
+	orientation:"horizontal"
+		
+
+<ListView>:
+	
+
+
+<ListItemI>:
+	text:"N O  T E X T  Y E T"
+	ImageLeftWidget:
+		source:"imgs/b.png"
+	
