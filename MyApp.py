@@ -23,23 +23,33 @@ class ScrManager (ScreenManager):
 
 
 
-# screens. 
+# SCREENS
+
+# HOME SCREEN. 
 
 class HomeScreen (Screen):
 	pass
 
+class UpperTools(MDToolbar):
+	pass
+
+
+
+# INTRODUCTION SCREEN
+
 class IntroScreen (Screen):
 	pass
 
+
+
+# LAYOUTS. ======================================
 class Hbox(MDBoxLayout):
 	pass
 
 class Vbox(MDBoxLayout):
 	pass
 
-class UpperTools(MDToolbar):
-	pass
-
+# LISTVIEW.======================================
 class ListView(MDList):
 	pass
 
@@ -47,6 +57,10 @@ class ListView(MDList):
 class ListItemI(OneLineAvatarListItem):
 	pass
 
+
+
+
+# MAIN APP CLASS. ===============================
 
 class MainApp (MDApp):
 	
