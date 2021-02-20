@@ -1,5 +1,6 @@
 # this file will have URLs needed in our application. 
 import webbrowser
+#thanks
 
 def mdlist ():
 	webbrowser.open("https://kivymd.readthedocs.io/en/latest/components/list/#onelinelistitem")
