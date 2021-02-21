@@ -11,6 +11,7 @@ from kivy.uix.screenmanager import Screen,ScreenManager,NoTransition
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem
+from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
 from kivymd.app import MDApp
 "=================================================================================================================="
 from urls import *
@@ -21,9 +22,12 @@ from urls import *
 
 
 
-# MAIN MANAGER FOR OUR SCREENS
+# MAIN MANAGER FOR OUR SCREENS ANF NAVIGATIONLAYOUT. 
 "=================================================================================================================="
 class ScrManager (ScreenManager):
+	pass
+
+class Navigator (NavigationLayout):
 	pass
 
 
@@ -90,13 +94,17 @@ class ListItemI(OneLineAvatarListItem):
 
 
 
-
 # MAIN APP CLASS
 "=================================================================================================================="
 class MainApp (MDApp):
 	
 	def build(self):
-		frame = ScrManager()
+		frame = Builder.load_file("main.kv")
 		return frame
-MainApp().run()
 
+
+
+
+
+
+MainApp().run()
