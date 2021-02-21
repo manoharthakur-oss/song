@@ -2,10 +2,18 @@
 #: import Links urls
 #"================================================================================="
 
-<ScrManager>:
-	id: Screens
-	HomeScreen:
-	IntroScreen:
+<Navigation>:
+	
+	ScrManager:
+		id: Manager
+		HomeScreen:
+			name:"Home"
+		IntroScreen:
+			name:"Introduction"
+	MDNavigationDrawer:
+
+
+
 		
 #"================================================================================="
 #"================================================================================="
@@ -17,6 +25,7 @@
 	
 	
 <HomeScreen>:
+	
 	Hbox:
 		UpperTools:
 			title:"ABSDEFGHI"
@@ -25,6 +34,7 @@
 			ScrollView:
 				ListView:
 					ListItemI:
+						
 						text:"Introduction"
 						
 					ListItemI:
@@ -41,7 +51,7 @@
 					
 
 <HomeScreen>:
-	name:"Introduction"
+	
 	Hbox:
 		UpperTools:
 		Hbox:
@@ -66,8 +76,6 @@
 
 <ListItemI>:
 	text:"N O  T E X T  Y E T "
-	
-	IconLeftWidget:
-		icon: "alpha-a"
-		
-	
+
+	ImageLeftWidget:
+		source:"alphaimg/x.png"

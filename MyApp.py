@@ -8,6 +8,8 @@ from kivy.uix.videoplayer import VideoPlayer
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.image import AsyncImage
 from kivy.uix.screenmanager import Screen,ScreenManager,NoTransition
+from kivy.properties import ObjectProperty
+from kivymd.uix.navigationdrawer import NavigationLayout , MDNavigationDrawer 
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem
@@ -70,7 +72,8 @@ class Hbox(MDBoxLayout):
 class Vbox(MDBoxLayout):
 	pass
 
-
+class Navigation (NavigationLayout):
+	pass
 
 
 
@@ -96,7 +99,8 @@ class ListItemI(OneLineAvatarListItem):
 class MainApp (MDApp):
 	
 	def build(self):
-		frame = ScrManager()
+		frame = Navigation()
 		return frame
-MainApp().run()
 
+
+MainApp().run()
