@@ -1,58 +1,146 @@
-
-#: import Links urls
-#"================================================================================="
-
-Navigator:
-	ScrManager:
-		HomeScreen:
-		IntroScreen:
-	MDNavigationDrawer:
+#: import Loader kivy.loader.Loader
+#: import NoTransition kivy.uix.screenmanager.NoTransition
+ScreenManager:
+	MenuScreen:
+#	profilescreentwo:
+#	profilescreenthree:
+#	profilescreenfour:
+#	profilescreenfive:
+#	profilescreensix:
+#	profilescreenseven:
+#	profilescreeneight:
+#	profilescreennine:
+#	subscreenone:						
 		
-#"================================================================================="
-#"================================================================================="
-
-
-
-
-
-<HomeScreen>:
-	Hbox:
-		UpperTools:
-		Hbox:
-			Scroll:
-				ListView:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					ListItemI:
-					
-	
-					
-					
-<IntroScreen>:
-
-
-
-<Hbox>:
-	orientation:"vertical"
-	
-
-<ListItemI>:
-	text:"N O  T E X T  Y E T "
-	ImageLeftWidget:
-		source:"alphaimg/x.png"
-	
+		
+<MenuScreen>:
+	name: 'menu'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'              
+                    MDToolbar:
+        		        title: 'Text Material'
+        		        type: 'top'
+			            left_action_items: [['menu',lambda x: nav_drawer.toggle_nav_drawer()]]
+			            elevation:10
+                    BoxLayout :
+                        orientation: 'vertical'                
+                        ScrollView:
+			                GridLayout:
+				                cols: 1
+				                
+				                spacing: root.height/3
+				                size_hint_y: None
+				                height:self.minimum_height
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Introduction to Python"
+										font_style: 'H6'
+										secondary_text:'python is a programing'
+										tertiary_text:"programing language"
+										on_release:
+											root.manager.current="profile2"
+											root.manager.transition.direction = "up"
+										IconLeftWidget:
+											icon:'information-variant'		
+									ThreeLineAvatarIconListItem:
+										text:"Flow of Control in Python"
+										font_style: 'H6'
+										secondary_text:'strings,lists,tuples'
+										on_release:
+											root.manager.current="profile3"
+											root.manager.transition.direction = "up"											
+										IconLeftWidget:
+											icon:'database'
+									ThreeLineAvatarIconListItem:
+										text:"Python Function"
+										font_style: 'H6'
+										secondary_text:'strings,lists,tuples'
+										on_release:
+											root.manager.current="profile4"
+											root.manager.transition.direction = "up"											
+										IconLeftWidget:
+											icon: 'code-brackets'
+									ThreeLineAvatarIconListItem:
+										text:"Python Datatypes"
+										font_style: 'H6'
+										secondary_text:'(1,2,3,4,5,6,7,8,9,10)'
+										on_release:
+											root.manager.current="profile5"
+											root.manager.transition.direction = "up"											
+										IconLeftWidget:
+											icon:'code-parentheses'
+									ThreeLineAvatarIconListItem:
+										text:"Python File"
+										font_style: 'H6'
+										secondary_text:'strings,lists,tuples'
+										on_release:
+											root.manager.current="profile6"
+											root.manager.transition.direction = "up"											
+										IconLeftWidget:
+											icon:'code-braces'
+									ThreeLineAvatarIconListItem:
+										text:"Python Objects and Classes"
+										font_style: 'H6'
+										secondary_text:'strings,lists,tuples'
+										on_release:
+											root.manager.current="profile7"
+											root.manager.transition.direction = "up"											
+										IconLeftWidget:
+											icon:'database'
+									ThreeLineAvatarIconListItem:
+										text:" Python Advanced Topics"
+										font_style: 'H6'
+										secondary_text:'strings,lists,tuples'
+										on_release:
+											root.manager.current="profile8"
+											root.manager.transition.direction = "up"											
+										IconLeftWidget:
+											icon:"database"
+									ThreeLineAvatarIconListItem:
+										text:"datetime in Python"
+										font_style: 'H6'
+										secondary_text:'strings,lists,tuples'
+										on_release:
+											root.manager.current="profile9"
+											root.manager.transition.direction = "up"											
+										IconLeftWidget:
+											icon:"database"											
+        MDNavigationDrawer:
+		    id:nav_drawer
+		    BoxLayout:
+		    	orientation:'vertical'
+		    	
+		    	padding:10
+		    	spacing: 5
+		    	AnchorLayout:
+		    		anchor_x: 'left'
+		    		
+			    	AsyncImage:
+			            source: "https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"
+			    BoxLayout:
+			        orientation :'vertical'
+			        size_hint_y:None
+			        MDLabel:
+			        	text: 'Next Level Tech'
+			        	font_style: 'Overline'
+			        	font_size: 40
+			        	size_hint_y: None
+			        	bold: True
+			        	pos_hint:{'center_x':0.6,'center_y':10}
+			        	font_colour: "blue"
+				    MDList:
+				    	OneLineIconListItem:
+				    		text: 'Bookmarks'
+				    		IconLeftWidget:
+				            	icon: 'bookmark'
+				    	OneLineIconListItem:
+				    		text: 'settings'
+				    		IconLeftWidget:
+				            	icon: 'tools'
+				    	OneLineIconListItem:
+				    		text: 'About Us'
+				    		IconLeftWidget:
+				            	icon: 'information'

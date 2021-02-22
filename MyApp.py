@@ -14,90 +14,14 @@ from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem
 from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
 from kivymd.app import MDApp
-"=================================================================================================================="
 from urls import *
-"=================================================================================================================="
-"=================================================================================================================="
-
-
-
-
-
-# MAIN MANAGER FOR OUR SCREENS ANF NAVIGATIONLAYOUT. 
-"=================================================================================================================="
-class ScrManager (ScreenManager):
-	pass
-
-class Navigator (NavigationLayout):
-	pass
-
-
-
-
-
-# SCREENS
-"=================================================================================================================="
-"=================================================================================================================="
-
-
-
-
-
-
-# HOME SCREEN
-"=================================================================================================================="
-class HomeScreen (Screen):
-	pass
-
-class UpperTools(MDToolbar):
-	pass
-
-
-
-
-
-
-# INTRODUCTION SCREEN
-"=================================================================================================================="
-class IntroScreen (Screen):
-	pass
-
-
-
-
-
-
-# LAYOUTS
-"=================================================================================================================="
-class Hbox(MDBoxLayout):
-	pass
-
-class Vbox(MDBoxLayout):
-	pass
-
-class Scroll (ScrollView):
-	pass
-
-
-
-
-
-# LISTVIEW
-"=================================================================================================================="
-class ListView(MDList):
-	pass
-
-
-class ListItemI(OneLineAvatarListItem):
-	pass
-
-
-
-
-
-
-# MAIN APP CLASS
-"=================================================================================================================="
+class MenuScreen(Screen):
+	def set_sc(self):
+	    MDApp.get_running_app().root.current = "profile"
+	    MDApp.get_running_app().root.transition.direction="up"
+	def set_screen(self):
+		MDApp.get_running_app().root.current = "profile1"
+		MDApp.get_running_app().root.transition = NoTransition(duration=0.001)
 class MainApp (MDApp):
 	
 	def build(self):
