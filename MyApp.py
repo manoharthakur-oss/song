@@ -13,7 +13,7 @@ from kivy.properties import ObjectProperty
 from kivymd.uix.navigationdrawer import NavigationLayout , MDNavigationDrawer 
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.toolbar import MDToolbar
-from kivymd.uix.list import MDList , OneLineAvatarListItem , ThreeLineAvatarListItem , TwoLineAvatarListItem
+from kivymd.uix.list import MDList , OneLineAvatarListItem , ThreeLineAvatarListItem , TwoLineAvatarListItem ,OneLineIconListItem, TwoLineIconListItem, ThreeLineIconListItem
 from kivymd.app import MDApp
 "=================================================================================================================="
 import urls
@@ -86,9 +86,23 @@ class ListView(MDList):
 	pass
 
 
-class ListItemI(TwoLineAvatarListItem):
+class AListItemI(OneLineAvatarListItem):
 	pass
 
+class AListItemII(TwoLineAvatarListItem):
+	pass
+
+class AListItemIII(ThreeLineAvatarListItem):
+	pass
+
+class iListItemI(OneLineAvatarListItem):
+	pass
+
+class iListItemII(TwoLineIconListItem):
+	pass
+
+class iListItemIII(ThreeLineIconListItem):
+	pass
 
 
 
