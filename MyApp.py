@@ -16,7 +16,7 @@ from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem , ThreeLineAvatarListItem , TwoLineAvatarListItem
 from kivymd.app import MDApp
 "=================================================================================================================="
-from urls import *
+import urls
 "=================================================================================================================="
 "=================================================================================================================="
 
@@ -99,7 +99,7 @@ class ListItemI(TwoLineAvatarListItem):
 "=================================================================================================================="
 class MainApp (MDApp):
 	def opening (self):
-		urls.mdlist()
+		webbrowser.open(urls.we.GitHub)
 		pass
 		
 	def build(self):
