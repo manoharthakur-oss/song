@@ -1,16 +1,9 @@
 # this file will have URLs needed in our application. 
 import webbrowser
 #thanks
+pythonorg = "https://python.org"
+kivy = "https://kivy.org"
 
-def mdlist ():
-	webbrowser.open("https://kivymd.readthedocs.io/en/latest/components/list/#onelinelistitem")
-	
-# main function for the module. 
-def maincall ():
-	mdlist()
-	
-if __name__=="__main__":
-	mdlist()
-
-
-	
+class we :
+	instagram = ""
+	GitHub = "https://github.com/manoharthakur351"
