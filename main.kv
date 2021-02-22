@@ -8,11 +8,40 @@
 		id: Manager
 		HomeScreen:
 			name:"Home"
+			MDFloatingActionButtonSpeedDial:
+				data:app.data
 		IntroScreen:
 			name:"Introduction"
+
+
 	MDNavigationDrawer:
-
-
+		Hbox:
+		
+			Hbox:
+				size_hint_y:.3
+				
+				
+				Hbox:
+					Image:
+						source:"alphaimg/n.png"
+				MDLabel:
+					size_hint:1,.1
+					text:"your name will be displayed here"
+			MDSeparator:
+			Hbox:
+				size_hint:1,.7
+				ScrollView:
+					ListView:
+						ListItemI:
+						ListItemI:
+						ListItemI:
+						ListItemI:
+						ListItemI:
+						ListItemI:
+						ListItemI:
+					
+	
+	
 
 		
 #"================================================================================="
@@ -28,18 +57,36 @@
 	
 	Hbox:
 		UpperTools:
-			title:"C H H O O S E  A  T I T L E "
-			left_action_items:[["arrow-left", lambda x:  print("successful")]]
+			title:"C H O O S E  A  T I T L E "
+			left_action_items:[["arrow-left", lambda x:root.nav_drawer.set_state("close")]]
 		Hbox:
 			ScrollView:
 				ListView:
 					ListItemI:
-						text:"Introduction"
+						
+						text:"INTRODUCTION"
 						on_press: print("DONE")
+						ImageLeftWidget:
+							source:"alphaimg/i.png"
+						
 						
 					ListItemI:
+						text:"DATA TYPES"
+						secondary_text:"we will know about 8 dtatypes"
+						ImageLeftWidget:
+							source:"alphaimg/d.png"
 					ListItemI:
+						text:"CLASSES"
+						secondary_text:"we will know about classes"
+						ImageLeftWidget:
+							source:"alphaimg/c.png"
+						
 					ListItemI:
+						text:"FUNCTIONS"
+						
+						ImageLeftWidget:
+							source:"alphaimg/f.png"
+						
 					ListItemI:
 					ListItemI:
 					ListItemI:
@@ -76,6 +123,5 @@
 
 <ListItemI>:
 	text:"N O  T E X T  Y E T "
-
-	ImageLeftWidget:
-		source:"alphaimg/x.png"
+	secondary_text:" n o  t e x t  y e t "
+	
