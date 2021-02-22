@@ -7,6 +7,7 @@ from kivy.lang.builder import Builder
 from kivy.uix.videoplayer import VideoPlayer
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.image import AsyncImage
+from kivy.uix.scrollview  import ScrollView
 from kivy.uix.screenmanager import Screen,ScreenManager,NoTransition
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.toolbar import MDToolbar
@@ -74,7 +75,8 @@ class Hbox(MDBoxLayout):
 class Vbox(MDBoxLayout):
 	pass
 
-
+class Scroll (ScrollView):
+	pass
 
 
 
