@@ -98,8 +98,8 @@ class ListItemI(TwoLineAvatarListItem):
 # MAIN APP CLASS
 "=================================================================================================================="
 class MainApp (MDApp):
-	def opening (self):
-		webbrowser.open(urls.we.GitHub)
+	def opening (self,link):
+		webbrowser.open(link)
 		pass
 		
 	def build(self):

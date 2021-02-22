@@ -1,5 +1,5 @@
 
-#: import Links urls
+#:import ur urls
 #"================================================================================="
 
 <Navigation>:
@@ -40,6 +40,12 @@
 						ListItemI:
 							text:"ABOUT"
 							on_release:app.opening()
+							ImageLeftWidget:
+								source:"alphaimg/a.png"
+							
+						ListItemI:
+							text:"GITHUB"
+							on_release:app.opening(ur.we.GitHub)
 							ImageLeftWidget:
 								source:"alphaimg/a.png"
 							
