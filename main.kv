@@ -1,7 +1,7 @@
 #: import Loader kivy.loader.Loader
 #: import NoTransition kivy.uix.screenmanager.NoTransition
 #: import SwapTransition kivy.uix.screenmanager.SwapTransition
-<ScrManager>:
+ScreenManager:
 	MenuScreen:
 	profilescreentwo:
 	profilescreenthree:
@@ -43,9 +43,8 @@
 										tertiary_text:"programing language"
 										on_release:
 											root.manager.current="profile2"
-											root.manager.transition = "SwapTransition"										
 										ImageLeftWidget:
-											source:'alpha-i'		
+											source:'alphaimg/i.png'		
 									ThreeLineAvatarIconListItem:
 										text:"Flow of Control in Python"
 										font_style: 'H6'

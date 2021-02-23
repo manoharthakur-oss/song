@@ -14,9 +14,8 @@ from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem
 from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
 from kivymd.app import MDApp
-from urls import *
-class ScrManager (ScreenManager):
-	transition=SwapTransition()
+from urls import*
+sc=ScreenManager()
 class MenuScreen(Screen):		
 	def set_sc(self):
 	    MDApp.get_running_app().root.current = "profile"
@@ -62,6 +61,6 @@ class subscreenone(Screen):
         MDApp.get_running_app().root.transition.direction="down"
 class MainApp (MDApp):
 	def build(self):
-		frame= ScrManager()
+		frame=sc
 		return frame
 MainApp().run()
