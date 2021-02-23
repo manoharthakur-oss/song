@@ -33,19 +33,20 @@
 				size_hint:1,.77
 				ScrollView:
 					ListView:
-						AListItemII:
-							text:"SETTINGS"
-							ImageLeftWidget:
-								source:"alphaimg/s.png"
-						AListItemII:
-							text:"ABOUT"
-							ImageLeftWidget:
-								source:"alphaimg/a.png"
-						AListItemII:
-							text:"GITHUB"
-							on_release:app.opening(ur.we.GitHub)
-							ImageLeftWidget:
-								source:"alphaimg/a.png"
+						OneLineIconListItem:
+							text:"Settings"
+							IconLeftWidget:
+								icon:"settings"
+						OneLineIconListItem:
+							text:"About us"
+							IconLeftWidget:
+								icon:"alpha-a-circle-outline"
+						OneLineIconListItem:
+							text:"GitHub"
+							IconLeftWidget:
+								icon:"github-face"
+						
+							
 							
 						
 					
