@@ -1,16 +1,17 @@
 #: import Loader kivy.loader.Loader
 #: import NoTransition kivy.uix.screenmanager.NoTransition
-ScreenManager:
+#: import SwapTransition kivy.uix.screenmanager.SwapTransition
+<ScrManager>:
 	MenuScreen:
-#	profilescreentwo:
-#	profilescreenthree:
-#	profilescreenfour:
-#	profilescreenfive:
-#	profilescreensix:
-#	profilescreenseven:
-#	profilescreeneight:
-#	profilescreennine:
-#	subscreenone:						
+	profilescreentwo:
+	profilescreenthree:
+	profilescreenfour:
+	profilescreenfive:
+	profilescreensix:
+	profilescreenseven:
+	profilescreeneight:
+	profilescreennine:
+	subscreenone:						
 		
 		
 <MenuScreen>:
@@ -42,9 +43,9 @@ ScreenManager:
 										tertiary_text:"programing language"
 										on_release:
 											root.manager.current="profile2"
-											root.manager.transition.direction = "up"
-										IconLeftWidget:
-											icon:'information-variant'		
+											root.manager.transition = "SwapTransition"										
+										ImageLeftWidget:
+											source:'i.png'		
 									ThreeLineAvatarIconListItem:
 										text:"Flow of Control in Python"
 										font_style: 'H6'
@@ -144,3 +145,641 @@ ScreenManager:
 				    		text: 'About Us'
 				    		IconLeftWidget:
 				            	icon: 'information'
+<profilescreentwo>:
+	name: 'profile2'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Getting Started with Python"
+										font_style: 'H6'
+										on_release:root.manager.current='sub1'
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"		    
+							        ThreeLineAvatarIconListItem:
+										text:"Keywords and Identifires"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Statements and Comments"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"		    
+									ThreeLineAvatarIconListItem:
+										text:"Python Variables"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"           
+									ThreeLineAvatarIconListItem:
+										text:"Python Datatypes"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"	
+									ThreeLineAvatarIconListItem:
+										text:"Python Type Conversion"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python I/O and Import"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Namespace"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:	
+										text:"Python Operators"
+										font_style: 'H6'
+										on_release:
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"							
+<profilescreenthree>:
+	name: 'profile3'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python if...else"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python for loop"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python while loop"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python break continue"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python pass"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"									
+<profilescreenfour>:
+	name: 'profile4'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python Functions"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Function Argument"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Recursion"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Anonymous Function"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Global Local and Nonlocal"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Global Keyword"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Modules"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Packages"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"												
+<profilescreenfive>:
+	name: 'profile5'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python Numbers"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Strings"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Lists"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Tuples"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Set"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Dictionary"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+<profilescreensix>:
+	name: 'profile6'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python File Operation"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Directory"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Exception"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Exception Handling"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python User-defined Exception"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+
+<profilescreenseven>:
+	name: 'profile7'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python OOP"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Class"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Inheritance"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Multiple Inheritance"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Operator Overloading"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+
+<profilescreeneight>:
+	name: 'profile8'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python Iterator"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Generator"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Closure"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Decorators"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Property"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python RegEx"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Examples"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+<profilescreennine>
+	name: 'profile9'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+                    	orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python datetime Module"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python datetime.strftime()"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python datetime.strptime()"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Current date and time"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Get current time"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Timestamp to datetime"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python time Module"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python time.sleep()"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+<subscreenone>
+	name: 'sub1'
+	NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+	    			MDToolbar:
+					    title: 'introduction'
+					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+						orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								padding: 50
+								spacing: 50
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None							
+							
+								MDCard:
+				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
+								    size_hint: None,None
+									size: root.width-100,root.height-800
+									
+		        					CodeInput:
+		        						readonly: True
+										text: 'for I in range:                     print("hello")'
+								MDCard:
+				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
+								    size_hint: None,None
+									size: root.width-100,root.height
+		        					SmartTile:
+		        						box_color:0,0,0,0
+		        						AsyncImage:
+		        							pos_hint: {'center_x': .5, 'center_y': .5}
+		        							size: 500,500
+		        							source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"	       
+								MDCard:
+				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
+								    size_hint: None,None
+									size: root.width-100,root.height
+		        					SmartTile:
+		        						box_color:0,0,0,0
+		        						AsyncImage:
+		        							pos_hint: {'center_x': .5, 'center_y': .5}
+		        							size: 500,500
+		        							source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"							
+								MDCard:
+				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
+								    size_hint: None,None
+									size: root.width-100,root.height
+		        					SmartTile:
+		        						box_color:0,0,0,0
+		        						AsyncImage:
+		        							pos_hint: {'center_x': .5, 'center_y': .5}
+		        							size: 500,500
+		        							source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"
+								MDCard:
+				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
+								    size_hint: None,None
+									size: root.width-100,root.height
+		        					SmartTile:
+		        						box_color:0,0,0,0
+		        						AsyncImage:
+		        							pos_hint: {'center_x': .5, 'center_y': .5}
+		        							size: 500,500
+		        							source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"
