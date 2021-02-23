@@ -1,5 +1,4 @@
-# this file will have URLs needed in our application. 
-import webbrowser
+# this file will have URLs needed in our 
 #thanks
 pythonorg = "https://python.org"
 kivy = "https://kivy.org"
