@@ -13,7 +13,9 @@ from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem
 from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
+from kivymd.uix.navigationdrawer import MDNavigationDrawer
 from kivymd.app import MDApp
+
 
 from urls import*
 
@@ -31,6 +33,7 @@ class MenuScreen(Screen):
 		MDApp.get_running_app().root.current = "profile1"
 		MDApp.get_running_app().root.transition = NoTransition(duration=0.001)
 # INTRODUCTION SCREEN. 
+
 class profilescreentwo(Screen):
 	def ch_sc(self):
 		change_it()
@@ -94,6 +97,8 @@ class subscreenone(Screen):
 	def ch_sc(self):
 		change_it()
 
+class Navigation (MDNavigationDrawer):
+	pass
 
 
 class MainApp (MDApp):
@@ -107,4 +112,6 @@ class MainApp (MDApp):
 		sc.add_widget(profilescreentwo(name="profile2"))
 		sc.add_widget(profilescreenthree(name="profile3"))				
 		return sc
-MainApp().run()
+
+if __name__=="__main__":
+	MainApp().run()
