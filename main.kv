@@ -25,10 +25,11 @@
 				Hbox:
 					Image:
 						source:"alphaimg/n.png"
-				MDLabel:
-					size_hint:1,.1
-					text:"N O  T E X T  Y E T"
+				
 			MDSeparator:
+				MDLabel:
+					text:"N O  T E X T  Y E T"
+
 			Hbox:
 				size_hint:1,.77
 				ScrollView:
@@ -43,6 +44,7 @@
 								icon:"alpha-a-circle-outline"
 						OneLineIconListItem:
 							text:"GitHub"
+							on_release:app.opening(ur.we.GitHub)
 							IconLeftWidget:
 								icon:"github-face"
 						
