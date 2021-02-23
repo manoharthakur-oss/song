@@ -5,5 +5,5 @@ pythonorg = "https://python.org"
 kivy = "https://kivy.org"
 
 class we :
-	instagram = ""
+	instagram = "https://www.instagram.com/manoharlal_thakur/"
 	GitHub = "https://github.com/manoharthakur351"
