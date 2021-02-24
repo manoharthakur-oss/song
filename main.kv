@@ -753,40 +753,54 @@ ScreenManager:
 											size: 500,500
 
 
-<olili>:
-	text:"OneLineIconListItem"
-	icon:"github-face"
-#<>:
-#<>:
-#<>:
-#<>:
-#<>:
+
 
 <Hbox>:
 	orientation:"horizontal"
+	md_bg_color: app.theme_cls.primary_color
 
 
 <Vbox>:
 	orientation:"vertical"
+	#md_bg_color: app.theme_cls.primary_color
 
 
 
 <Navigation>:
 	Vbox:
 		Vbox:
+			md_bg_color: app.theme_cls.primary_color
 			size_hint_y:.2
 			Image:
 				source:"alphaimg/n.png"
 		Vbox:
+			md_bg_color: 1,1,1,.3
 			padding:50,10
 			size_hint_y:.1
+			
 			MDLabel:
-				text:"md label"
+				text:"MDLabel@gmail.com"
+				font_style:"H6"
+		MDSeparator:
 		Vbox:
 			size_hint_y:.7
 			ScrollView:
 				MDList:
-					olili:
-						
-						
-						
+					OneLineIconListItem:
+						text:"Settings"
+						IconLeftWidget:
+							icon:"settings-outline"
+					OneLineIconListItem:
+						text:"About"
+						IconLeftWidget:
+							icon:"alpha-a-circle-outline"
+					OneLineIconListItem:
+						text:"Github"
+						IconLeftWidget:
+							icon:"github-face"
+					OneLineIconListItem:
+						text:"Instagram"
+						IconLeftWidget:
+							icon:"instagram"
+					
+					
