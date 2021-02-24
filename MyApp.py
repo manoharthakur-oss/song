@@ -1,7 +1,7 @@
 import logging
 import kivymd
 import PIL
-import webbrowser
+import webbrowser as wb
 import random
 from kivy.lang.builder import Builder
 from kivy.uix.videoplayer import VideoPlayer
@@ -123,6 +123,9 @@ class Vbox (MDBoxLayout):
 
 
 class MainApp (MDApp):
+	def web (self, string_link):
+		wb.open(string_link)
+		
 	
 	data= {"menu":"oll"}
 	
