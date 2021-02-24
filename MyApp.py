@@ -11,6 +11,9 @@ from kivy.uix.scrollview  import ScrollView
 from kivy.uix.screenmanager import Screen,ScreenManager,NoTransition, FadeTransition, RiseInTransition
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.list import OneLineAvatarListItem , TwoLineAvatarListItem, ThreeLineAvatarListItem, OneLineIconListItem, TwoLineIconListItem ,ThreeLineIconListItem
+from kivymd.uix.list import OneLineAvatarIconListItem
+from kivymd.uix.list import TwoLineAvatarIconListItem
+from kivymd.uix.list import ThreeLineAvatarIconListItem
 from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem
 from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
@@ -128,11 +131,18 @@ class olili (OneLineIconListItem):
 class tlili (TwoLineIconListItem):
 	pass 
 class thlili (ThreeLineIconListItem):
-	pass 
+	pass
+class olaili():
+	pass
+class tlaili():
+	pass
+class thlaili():
+	pass
 
 
 class MainApp (MDApp):
 	
+	data= {"menu":"oll"}
 	
 	def build(self):
 		l=['Red', 'Purple', 'DeepPurple', 'Indigo', 'Blue', 'LightBlue', 'Cyan', 'Teal', 'Green', 'LightGreen', 'Orange', 'DeepOrange',]
