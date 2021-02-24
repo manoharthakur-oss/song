@@ -10,10 +10,11 @@ from kivy.uix.image import AsyncImage
 from kivy.uix.scrollview  import ScrollView
 from kivy.uix.screenmanager import Screen,ScreenManager,NoTransition, FadeTransition, RiseInTransition
 from kivymd.uix.boxlayout import MDBoxLayout
+from kivymd.uix.list import OneLineAvatarListItem , TwoLineAvatarListItem, ThreeLineAvatarListItem, OneLineIconListItem, TwoLineIconListItem ,ThreeLineIconListItem
 from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.list import MDList , OneLineAvatarListItem
 from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
-from kivymd.uix.navigationdrawer import MDNavigationDrawer
+from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.app import MDApp
 
 
@@ -23,16 +24,20 @@ def change_it():
 	MDApp.get_running_app().root.current = "menu"
 	MDApp.get_running_app().root.transition.direction="down"
 
+# SCREENS
+"================================================================================================"
 	
 
-class MenuScreen(Screen):		
+class MenuScreen(Screen):
+	"""
+	HOME SCREEN
+	"""		
 	def set_sc(self):
 		MDApp.get_running_app().root.current = "profile"
 		MDApp.get_running_app().root.transition.direction="up"
 	def set_screen(self):
 		MDApp.get_running_app().root.current = "profile1"
-		MDApp.get_running_app().root.transition = NoTransition(duration=0.001)
-# INTRODUCTION SCREEN. 
+		MDApp.get_running_app().root.transition = NoTransition(duration=0.1)
 
 class profilescreentwo(Screen):
 	def ch_sc(self):
@@ -41,7 +46,7 @@ class profilescreentwo(Screen):
 
 class profilescreenthree(Screen):
 	""" 
-	
+	INTRODUCTION SCREEN
 	"""
 	def ch_sc(self):
 		change_it()
@@ -99,6 +104,31 @@ class subscreenone(Screen):
 
 class Navigation (MDNavigationDrawer):
 	pass
+
+# LAYOUTS (BOXLAYOUTS)
+"================================================================================================"
+
+class Hbox (MDBoxLayout):
+	pass
+
+class Vbox (MDBoxLayout):
+	pass
+
+
+# LIST ITEMS
+"================================================================================================"
+class olali (OneLineAvatarListItem):
+	pass 
+class tlali (TwoLineAvatarListItem):
+	pass 
+class thlali (ThreeLineAvatarListItem):
+	pass 
+class olili (OneLineIconListItem):
+	pass 
+class tlili (TwoLineIconListItem):
+	pass 
+class thlili (ThreeLineIconListItem):
+	pass 
 
 
 class MainApp (MDApp):

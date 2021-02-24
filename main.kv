@@ -17,24 +17,24 @@ ScreenManager:
 <MenuScreen>:
 	name: 'menu'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'              
-                    MDToolbar:
-        		        title: 'Text Material'
-        		        type: 'top'
-			            left_action_items: [['menu',lambda x: nav_drawer.toggle_nav_drawer()]]
-			            elevation:10
-                    BoxLayout :
-                        orientation: 'vertical'                
-                        ScrollView:
-			                GridLayout:
-				                cols: 1
-				                
-				                spacing: root.height/3
-				                size_hint_y: None
-				                height:self.minimum_height
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'			  
+					MDToolbar:
+						title: 'Text Material'
+						type: 'top'
+						left_action_items: [['menu',lambda x: nav_drawer.toggle_nav_drawer()]]
+						elevation:10
+					BoxLayout :
+						orientation: 'vertical'				
+						ScrollView:
+							GridLayout:
+								cols: 1
+								
+								spacing: root.height/3
+								size_hint_y: None
+								height:self.minimum_height
 								MDList:
 									ThreeLineAvatarIconListItem:
 										text:"Introduction to Python"
@@ -107,56 +107,23 @@ ScreenManager:
 											root.manager.current="profile9"
 											root.manager.transition.direction = "up"											
 										IconLeftWidget:
-											icon:"database"											
-        MDNavigationDrawer:
-		    id:nav_drawer
-		    BoxLayout:
-		    	orientation:'vertical'
-		    	
-		    	padding:10
-		    	spacing: 5
-		    	AnchorLayout:
-		    		anchor_x: 'left'
-		    		
-			    	AsyncImage:
-			            source: "https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"
-			    BoxLayout:
-			        orientation :'vertical'
-			        size_hint_y:None
-			        MDLabel:
-			        	text: 'Next Level Tech'
-			        	font_style: 'Overline'
-			        	font_size: 40
-			        	size_hint_y: None
-			        	bold: True
-			        	pos_hint:{'center_x':0.6,'center_y':10}
-			        	font_colour: "blue"
-				    MDList:
-				    	OneLineIconListItem:
-				    		text: 'Bookmarks'
-				    		IconLeftWidget:
-				            	icon: 'bookmark'
-				    	OneLineIconListItem:
-				    		text: 'settings'
-				    		IconLeftWidget:
-				            	icon: 'tools'
-				    	OneLineIconListItem:
-				    		text: 'About Us'
-				    		IconLeftWidget:
-				            	icon: 'information'
+											icon:"database"
+		Navigation:											
+
+
 # Introduction screen. 
 <profilescreentwo>:
 	name: 'profile2'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x: root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x: root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -170,8 +137,8 @@ ScreenManager:
 										secondary_text: "you con download"
 										tertiary_text:"Python from python.org"
 										IconLeftWidget:
-											icon:"arrow-up-circle"		    
-							        ThreeLineAvatarIconListItem:
+											icon:"arrow-up-circle"			
+									ThreeLineAvatarIconListItem:
 										text:"Keywords and Identifires"
 										font_style: 'H6'
 										on_release:
@@ -186,7 +153,7 @@ ScreenManager:
 										secondary_text: "you con download"
 										tertiary_text:"Python from python.org"
 										IconLeftWidget:
-											icon:"arrow-up-circle"		    
+											icon:"arrow-up-circle"			
 									ThreeLineAvatarIconListItem:
 										text:"Python Variables"
 										font_style: 'H6'
@@ -194,7 +161,7 @@ ScreenManager:
 										secondary_text: "you con download"
 										tertiary_text:"Python from python.org"
 										IconLeftWidget:
-											icon:"arrow-up-circle"           
+											icon:"arrow-up-circle"		   
 									ThreeLineAvatarIconListItem:
 										text:"Python Datatypes"
 										font_style: 'H6'
@@ -238,15 +205,15 @@ ScreenManager:
 <profilescreenthree>:
 	name: 'profile3'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -296,15 +263,15 @@ ScreenManager:
 <profilescreenfour>:
 	name: 'profile4'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -378,15 +345,15 @@ ScreenManager:
 <profilescreenfive>:
 	name: 'profile5'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -444,15 +411,15 @@ ScreenManager:
 <profilescreensix>:
 	name: 'profile6'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -503,15 +470,15 @@ ScreenManager:
 <profilescreenseven>:
 	name: 'profile7'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -562,15 +529,15 @@ ScreenManager:
 <profilescreeneight>:
 	name: 'profile8'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -636,15 +603,15 @@ ScreenManager:
 <profilescreennine>
 	name: 'profile9'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
-                    	orientation: 'vertical'
+						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
 								cols: 1
@@ -718,13 +685,13 @@ ScreenManager:
 <subscreenone>
 	name: 'sub1'
 	NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-	    			MDToolbar:
-					    title: 'introduction'
-					    left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
 						orientation: 'vertical'
 						ScrollView:
@@ -736,53 +703,77 @@ ScreenManager:
 								size_hint_y: None							
 							
 								MDCard:
-				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
-								    size_hint: None,None
+									pos_hint: {'center_x': .5, 'center_y': .5}				
+									size_hint: None,None
 									size: root.width-100,root.height-800
 									
-		        					CodeInput:
-		        						readonly: True
-										text: 'for I in range:                     print("hello")'
+									CodeInput:
+										readonly: True
+										text: 'for I in range:					 print("hello")'
 								MDCard:
-				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
-								    size_hint: None,None
+									pos_hint: {'center_x': .5, 'center_y': .5}				
+									size_hint: None,None
 									size: root.width-100,root.height
-		        					SmartTile:
-		        						box_color:0,0,0,0
-		        						AsyncImage:
-		        							pos_hint: {'center_x': .5, 'center_y': .5}
-		        							size: 500,500
-		        							source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"	       
+									SmartTile:
+										box_color:0,0,0,0
+										AsyncImage:
+											pos_hint: {'center_x': .5, 'center_y': .5}
+											size: 500,500
+											source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"		   
 								MDCard:
-				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
-								    size_hint: None,None
+									pos_hint: {'center_x': .5, 'center_y': .5}				
+									size_hint: None,None
 									size: root.width-100,root.height
-		        					SmartTile:
-		        						box_color:0,0,0,0
-		        						AsyncImage:
-		        							pos_hint: {'center_x': .5, 'center_y': .5}
-		        							size: 500,500
-		        							source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"							
+									SmartTile:
+										box_color:0,0,0,0
+										AsyncImage:
+											pos_hint: {'center_x': .5, 'center_y': .5}
+											size: 500,500
+											source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"							
 								MDCard:
-				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
-								    size_hint: None,None
+									pos_hint: {'center_x': .5, 'center_y': .5}				
+									size_hint: None,None
 									size: root.width-100,root.height
-		        					SmartTile:
-		        						box_color:0,0,0,0
-		        						AsyncImage:
-		        							pos_hint: {'center_x': .5, 'center_y': .5}
-		        							size: 500,500
-		        							source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"
+									SmartTile:
+										box_color:0,0,0,0
+										AsyncImage:
+											pos_hint: {'center_x': .5, 'center_y': .5}
+											size: 500,500
+											source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"
 								MDCard:
-				        			pos_hint: {'center_x': .5, 'center_y': .5}			    
-								    size_hint: None,None
+									pos_hint: {'center_x': .5, 'center_y': .5}				
+									size_hint: None,None
 									size: root.width-100,root.height
-		        					SmartTile:
-		        						box_color:0,0,0,0
-		        						AsyncImage:
-		        							pos_hint: {'center_x': .5, 'center_y': .5}
-		        							size: 500,500
+									SmartTile:
+										box_color:0,0,0,0
+										AsyncImage:
+											pos_hint: {'center_x': .5, 'center_y': .5}
+											size: 500,500
+
+
+<Hbox>:
+	orientation:"horizontal"
+
+
+<Vbox>:
+	orientation:"vertical"
+
 
 
 <Navigation>:
+	Vbox:
+		Vbox:
+			size_hint_y:.2
+			Image:
+				source:"alphaimg/n.png"
+		Vbox:
+			padding:50,10
+			size_hint_y:.1
+			MDLabel:
+				text:"md label"
+		Vbox:
+			size_hint_y:.7
+			ScrollView:
+				MDList:
+					
 	
