@@ -2,6 +2,7 @@
 #: import NoTransition kivy.uix.screenmanager.NoTransition
 #: import SwapTransition kivy.uix.screenmanager.SwapTransition
 #: import ur urls
+#: import lg logging
 ScreenManager:
 	MenuScreen:
 		MDFloatingActionButtonSpeedDial:
@@ -54,7 +55,7 @@ ScreenManager:
 										secondary_text:'strings,lists,tuples'
 										on_release:
 											root.manager.current="profile3"
-											root.manager.transition.direction = "up"											
+																						
 										IconLeftWidget:
 											icon:'database'
 									ThreeLineAvatarIconListItem:
@@ -63,7 +64,7 @@ ScreenManager:
 										secondary_text:'strings,lists,tuples'
 										on_release:
 											root.manager.current="profile4"
-											root.manager.transition.direction = "up"											
+																						
 										IconLeftWidget:
 											icon: 'code-brackets'
 									ThreeLineAvatarIconListItem:
@@ -72,7 +73,7 @@ ScreenManager:
 										secondary_text:'(1,2,3,4,5,6,7,8,9,10)'
 										on_release:
 											root.manager.current="profile5"
-											root.manager.transition.direction = "up"											
+																						
 										IconLeftWidget:
 											icon:'code-parentheses'
 									ThreeLineAvatarIconListItem:
@@ -81,7 +82,7 @@ ScreenManager:
 										secondary_text:'strings,lists,tuples'
 										on_release:
 											root.manager.current="profile6"
-											root.manager.transition.direction = "up"											
+																						
 										IconLeftWidget:
 											icon:'code-braces'
 									ThreeLineAvatarIconListItem:
@@ -90,7 +91,7 @@ ScreenManager:
 										secondary_text:'strings,lists,tuples'
 										on_release:
 											root.manager.current="profile7"
-											root.manager.transition.direction = "up"											
+																						
 										IconLeftWidget:
 											icon:'database'
 									ThreeLineAvatarIconListItem:
@@ -99,7 +100,7 @@ ScreenManager:
 										secondary_text:'strings,lists,tuples'
 										on_release:
 											root.manager.current="profile8"
-											root.manager.transition.direction = "up"											
+																						
 										IconLeftWidget:
 											icon:"database"
 									ThreeLineAvatarIconListItem:
@@ -108,7 +109,7 @@ ScreenManager:
 										secondary_text:'strings,lists,tuples'
 										on_release:
 											root.manager.current="profile9"
-											root.manager.transition.direction = "up"											
+																						
 										IconLeftWidget:
 											icon:"database"
 		Navigation:											
@@ -366,7 +367,7 @@ ScreenManager:
 									ThreeLineAvatarIconListItem:
 										text:"Python Numbers"
 										font_style: 'H6'
-										on_release:root.manager.current="profile3"
+										on_release:root.manager.current="profile4"
 										secondary_text: "you con download"
 										tertiary_text:"Python from python.org"
 										IconLeftWidget:
