@@ -23,8 +23,8 @@ from urls import*
 def change_it():
 	MDApp.get_running_app().root.current = "menu"
 	#MDApp.get_running_app().root.transition = FadeTransition()
-	MDApp.get_running_app().root.transition.direction="up"
-	MDApp.get_running_app().root.transition.duration=10
+	#MDApp.get_running_app().root.transition.direction="up"
+	#MDApp.get_running_app().root.transition.duration=0.1
 
 # SCREENS
 "================================================================================================"
@@ -136,6 +136,12 @@ class MainApp (MDApp):
 		sc.add_widget(MenuScreen(name="menu"))
 		sc.add_widget(profilescreentwo(name="profile2"))
 		sc.add_widget(profilescreenthree(name="profile3"))				
+		sc.add_widget(profilescreenfour(name="profile4"))				
+		sc.add_widget(profilescreenfive(name="profile5"))				
+		sc.add_widget(profilescreensix(name="profile6"))				
+		sc.add_widget(profilescreenseven(name="profile7"))				
+		sc.add_widget(profilescreeneight(name="profile8"))				
+		sc.add_widget(profilescreennine(name="profile9"))				
 		return sc
 
 if __name__=="__main__":
