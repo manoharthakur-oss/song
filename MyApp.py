@@ -22,8 +22,8 @@ from urls import*
 
 def change_it():
 	MDApp.get_running_app().root.current = "menu"
-	#MDApp.get_running_app().root.transition = FadeTransition()
-	#MDApp.get_running_app().root.transition.direction="up"
+	MDApp.get_running_app().root.transition = NoTransition()
+	MDApp.get_running_app().root.transition.direction="right"
 	#MDApp.get_running_app().root.transition.duration=0.1
 
 # SCREENS
@@ -131,7 +131,7 @@ class MainApp (MDApp):
 	
 	def build(self):
 		l=['Red', 'Purple', 'DeepPurple', 'Indigo', 'Blue', 'LightBlue', 'Cyan', 'Teal', 'Green', 'LightGreen', 'Orange', 'DeepOrange',]
-		self.theme_cls.primary_palette = random.choice(l)		
+		self.theme_cls.primary_palette = "Cyan"
 		sc=ScreenManager()
 		sc.add_widget(MenuScreen(name="menu"))
 		sc.add_widget(profilescreentwo(name="profile2"))
