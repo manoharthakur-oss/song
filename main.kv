@@ -40,78 +40,87 @@ ScreenManager:
 								size_hint_y: None
 								height:self.minimum_height
 								MDList:
-									ThreeLineAvatarIconListItem:
-										text:"Introduction to Python"
+									TwoLineAvatarIconListItem:
+										text:"Python"
 										font_style: 'H6'
-										secondary_text:'python is a programing'
-										tertiary_text:"programing language"
+										secondary_text:'Introduction'
 										on_release:
 											root.manager.current="profile2"
 										ImageLeftWidget:
 											source:'alphaimg/i.png'		
-									ThreeLineAvatarIconListItem:
-										text:"Flow of Control in Python"
+									TwoLineAvatarIconListItem:
+										text:"Flow of Control"
 										font_style: 'H6'
-										secondary_text:'strings,lists,tuples'
+										secondary_text:''
 										on_release:
 											root.manager.current="profile3"
-																						
-										IconLeftWidget:
-											icon:'database'
-									ThreeLineAvatarIconListItem:
-										text:"Python Function"
+										ImageLeftWidget:
+											source:'alphaimg/f.png'
+									
+									TwoLineAvatarIconListItem:
+										text:"Datatypes"
 										font_style: 'H6'
-										secondary_text:'strings,lists,tuples'
-										on_release:
-											root.manager.current="profile4"
-																						
-										IconLeftWidget:
-											icon: 'code-brackets'
-									ThreeLineAvatarIconListItem:
-										text:"Python Datatypes"
-										font_style: 'H6'
-										secondary_text:'(1,2,3,4,5,6,7,8,9,10)'
+										secondary_text:'datatypes in python'
 										on_release:
 											root.manager.current="profile5"
-																						
-										IconLeftWidget:
-											icon:'code-parentheses'
-									ThreeLineAvatarIconListItem:
-										text:"Python File"
+										ImageLeftWidget:
+											source:'alphaimg/d.png'													
+										
+									TwoLineAvatarIconListItem:
+										text:"Operators"
 										font_style: 'H6'
-										secondary_text:'strings,lists,tuples'
+										secondary_text:'basic operators in python'
+										on_release:
+											root.manager.current="profile4"
+										ImageLeftWidget:
+											source:'alphaimg/o.png'												
+										
+																				
+									TwoLineAvatarIconListItem:
+										text:"Looping"
+										font_style: 'H6'
+										secondary_text:'repeating a program'
 										on_release:
 											root.manager.current="profile6"
-																						
-										IconLeftWidget:
-											icon:'code-braces'
-									ThreeLineAvatarIconListItem:
-										text:"Python Objects and Classes"
+										ImageLeftWidget:
+											source:'alphaimg/l.png'												
+										
+									TwoLineAvatarIconListItem:
+										text:"Functions"
 										font_style: 'H6'
-										secondary_text:'strings,lists,tuples'
+										secondary_text:''
 										on_release:
 											root.manager.current="profile7"
-																						
-										IconLeftWidget:
-											icon:'database'
-									ThreeLineAvatarIconListItem:
-										text:" Python Advanced Topics"
+										ImageLeftWidget:
+											source:'alphaimg/f.png'												
+										
+									TwoLineAvatarIconListItem:
+										text:"Oops concept"
 										font_style: 'H6'
-										secondary_text:'strings,lists,tuples'
+										secondary_text:'objects and classes'
 										on_release:
 											root.manager.current="profile8"
-																						
-										IconLeftWidget:
-											icon:"database"
-									ThreeLineAvatarIconListItem:
-										text:"datetime in Python"
+										ImageLeftWidget:
+											source:'alphaimg/o.png'												
+										
+									TwoLineAvatarIconListItem:
+										text:"Modules"
 										font_style: 'H6'
 										secondary_text:'strings,lists,tuples'
 										on_release:
 											root.manager.current="profile9"
-																						
-										IconLeftWidget:
-											icon:"database"
+										ImageLeftWidget:
+											source:'alphaimg/m.png'												
+									
+									TwoLineAvatarIconListItem:
+										text:"Working with Files"
+										font_style: 'H6'
+										secondary_text:'creat, read & write files'
+										on_release:
+											print(self.text, self.secondary_text)
+										ImageLeftWidget:
+											source:'alphaimg/f.png'												
+									
 		Navigation:											
 
 
