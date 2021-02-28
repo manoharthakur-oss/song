@@ -34,7 +34,8 @@ def change_it():
 
 # SCREENS
 "================================================================================================"
-	
+class Manager (ScreenManager):
+	pass
 
 class MenuScreen(Screen):
 	"""
@@ -149,7 +150,7 @@ class MainApp (MDApp):
 		sc.add_widget(profilescreensix(name="profile6"))				
 		sc.add_widget(profilescreenseven(name="profile7"))				
 		sc.add_widget(profilescreeneight(name="profile8"))				
-		return sc
+		return Manager()
 
 if __name__=="__main__":
 	MainApp().run()

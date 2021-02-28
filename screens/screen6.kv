@@ -1,0 +1,58 @@
+<profilescreensix>:
+	name: 'profile6'
+	NavigationLayout:
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+						orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python File Operation"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Directory"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Exception"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Exception Handling"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python User-defined Exception"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"

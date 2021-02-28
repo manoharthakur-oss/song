@@ -1,0 +1,74 @@
+<profilescreeneight>:
+	name: 'profile8'
+	NavigationLayout:
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+						orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python Iterator"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Generator"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Closure"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Decorators"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Property"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python RegEx"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Examples"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"

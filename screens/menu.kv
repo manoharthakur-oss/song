@@ -1,0 +1,104 @@
+<MenuScreen>:
+	name: 'menu'
+	NavigationLayout:
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'			  
+					MDToolbar:
+						title: 'Text Material'
+						type: 'top'
+						left_action_items: [['menu',lambda x: nav_drawer.toggle_nav_drawer()]]
+						elevation:5
+					BoxLayout :
+						orientation: 'vertical'				
+						ScrollView:
+							GridLayout:
+								cols: 1
+								
+								spacing: root.height/3
+								size_hint_y: None
+								height:self.minimum_height
+								MDList:
+									TwoLineAvatarIconListItem:
+										text:"Python"
+										font_style: 'H6'
+										secondary_text:'Introduction'
+										on_release:
+											root.manager.current="profile1"
+										ImageLeftWidget:
+											source:'alphaimg/i.png'		
+									TwoLineAvatarIconListItem:
+										text:"Flow of Control"
+										font_style: 'H6'
+										secondary_text:"understanding algorithm"
+										on_release:
+											root.manager.current="profile3"
+										ImageLeftWidget:
+											source:'alphaimg/f.png'
+									
+									TwoLineAvatarIconListItem:
+										text:"Datatypes"
+										font_style: 'H6'
+										secondary_text:'datatypes in python'
+										on_release:
+											root.manager.current="profile5"
+										ImageLeftWidget:
+											source:'alphaimg/d.png'													
+										
+									TwoLineAvatarIconListItem:
+										text:"Operators"
+										font_style: 'H6'
+										secondary_text:'basic operators in python'
+										on_release:
+											root.manager.current="profile4"
+										ImageLeftWidget:
+											source:'alphaimg/o.png'												
+										
+																				
+									TwoLineAvatarIconListItem:
+										text:"Looping"
+										font_style: 'H6'
+										secondary_text:'repeating a program'
+										on_release:
+											root.manager.current="profile6"
+										ImageLeftWidget:
+											source:'alphaimg/l.png'												
+										
+									TwoLineAvatarIconListItem:
+										text:"Functions"
+										font_style: 'H6'
+										secondary_text:"defining own functions"
+										on_release:
+											root.manager.current="profile7"
+										ImageLeftWidget:
+											source:'alphaimg/f.png'												
+										
+									TwoLineAvatarIconListItem:
+										text:"Oops concept"
+										font_style: 'H6'
+										secondary_text:'objects and classes'
+										on_release:
+											root.manager.current="profile8"
+										ImageLeftWidget:
+											source:'alphaimg/o.png'												
+										
+									TwoLineAvatarIconListItem:
+										text:"Modules"
+										font_style: 'H6'
+										secondary_text:'strings,lists,tuples'
+										on_release:
+											root.manager.current="profile9"
+										ImageLeftWidget:
+											source:'alphaimg/m.png'												
+									
+									TwoLineAvatarIconListItem:
+										text:"Working with Files"
+										font_style: 'H6'
+										secondary_text:'creat, read & write files'
+										on_release:
+											print(self.text, self.secondary_text)
+										ImageLeftWidget:
+											source:'alphaimg/f.png'												
+									
+		Navigation:											

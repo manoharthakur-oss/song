@@ -1,0 +1,66 @@
+<profilescreenfive>:
+	name: 'profile5'
+	NavigationLayout:
+		ScreenManager:
+			Screen:
+				BoxLayout:
+					orientation: 'vertical'
+					MDToolbar:
+						title: 'introduction'
+						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
+					BoxLayout:
+						orientation: 'vertical'
+						ScrollView:
+							GridLayout:
+								cols: 1
+								height: self.minimum_height
+								size_hint_y: None
+								MDList:
+									ThreeLineAvatarIconListItem:
+										text:"Python Numbers"
+										font_style: 'H6'
+										on_release:root.manager.current="profile4"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Strings"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Lists"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Tuples"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Set"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
+									ThreeLineAvatarIconListItem:
+										text:"Python Dictionary"
+										font_style: 'H6'
+										on_release:root.manager.current="profile3"
+										secondary_text: "you con download"
+										tertiary_text:"Python from python.org"
+										IconLeftWidget:
+											icon:"arrow-up-circle"
