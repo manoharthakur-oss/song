@@ -17,8 +17,14 @@ from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.app import MDApp
 
-
+# My Modules
+#_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________."
 from urls import*
+
+Builder.load_file("screens/screen1.kv")
+
+
+#_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 def change_it():
 	MDApp.get_running_app().root.current = "menu"
@@ -41,6 +47,13 @@ class MenuScreen(Screen):
 		MDApp.get_running_app().root.current = "profile1"
 		MDApp.get_running_app().root.transition = NoTransition(duration=0.1)
 
+class profilescreenone(Screen):
+	""" 
+	
+	"""
+	def ch_sc(self):
+		change_it()
+		
 class profilescreentwo(Screen):
 	def ch_sc(self):
 		change_it()
@@ -90,13 +103,7 @@ class profilescreeneight(Screen):
 	def ch_sc(self):
 		change_it()
 		
-class profilescreennine(Screen):
-	""" 
-	
-	"""
-	def ch_sc(self):
-		change_it()
-		
+
 class subscreenone(Screen):
 	""" 
 	
@@ -134,6 +141,7 @@ class MainApp (MDApp):
 		self.theme_cls.primary_palette = "Cyan"
 		sc=ScreenManager()
 		sc.add_widget(MenuScreen(name="menu"))
+		sc.add_widget(profilescreenone(name="profile1"))				
 		sc.add_widget(profilescreentwo(name="profile2"))
 		sc.add_widget(profilescreenthree(name="profile3"))				
 		sc.add_widget(profilescreenfour(name="profile4"))				
@@ -141,7 +149,6 @@ class MainApp (MDApp):
 		sc.add_widget(profilescreensix(name="profile6"))				
 		sc.add_widget(profilescreenseven(name="profile7"))				
 		sc.add_widget(profilescreeneight(name="profile8"))				
-		sc.add_widget(profilescreennine(name="profile9"))				
 		return sc
 
 if __name__=="__main__":
