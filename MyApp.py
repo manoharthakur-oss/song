@@ -17,139 +17,92 @@ from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.app import MDApp
 
-# My Modules
-#_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________."
 from urls import*
 
+
+Builder.load_file("main.kv")
+Builder.load_file("screens/menu.kv")
 Builder.load_file("screens/screen1.kv")
+Builder.load_file("screens/screen2.kv")
+Builder.load_file("screens/screen3.kv")
+Builder.load_file("screens/screen4.kv")
+Builder.load_file("screens/screen5.kv")
+Builder.load_file("screens/screen6.kv")
+Builder.load_file("screens/screen7.kv")
+Builder.load_file("screens/screen8.kv")
 
-
-#_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
-def change_it():
-	MDApp.get_running_app().root.current = "menu"
-	MDApp.get_running_app().root.transition = NoTransition()
-	MDApp.get_running_app().root.transition.direction="right"
-	#MDApp.get_running_app().root.transition.duration=0.1
-
-# SCREENS
-"================================================================================================"
-class Manager (ScreenManager):
+class Manager(ScreenManager):
 	pass
+
+# SCREEN(S)
+#________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 class MenuScreen(Screen):
 	"""
-	HOME SCREEN
-	"""		
-	def set_sc(self):
-		MDApp.get_running_app().root.current = "profile"
-		MDApp.get_running_app().root.transition.direction="up"
-	def set_screen(self):
-		MDApp.get_running_app().root.current = "profile1"
-		MDApp.get_running_app().root.transition = NoTransition(duration=0.1)
+	
+	"""
+	pass
 
 class profilescreenone(Screen):
-	""" 
+	"""
 	
 	"""
-	def ch_sc(self):
-		change_it()
-		
-class profilescreentwo(Screen):
-	def ch_sc(self):
-		change_it()
+	pass
 
+class profilescreentwo(Screen):
+	"""
+	
+	"""
+	pass
 
 class profilescreenthree(Screen):
-	""" 
-	INTRODUCTION SCREEN
 	"""
-	def ch_sc(self):
-		change_it()
+	
+	"""
+	pass
 
-		
 class profilescreenfour(Screen):
-	""" 
+	"""
 	
 	"""
-	def ch_sc(self):
-		change_it()
+	pass
 
-		
 class profilescreenfive(Screen):
-	""" 
+	"""
 	
 	"""
-	def ch_sc(self):
-		change_it()
-		
+	pass
+
 class profilescreensix(Screen):
-	""" 
+	"""
 	
 	"""
-	def ch_sc(self):
-		change_it()
-		
+	pass
+
 class profilescreenseven(Screen):
-	""" 
+	"""
 	
 	"""
-	def ch_sc(self):
-		change_it()
-		
+	pass
+
 class profilescreeneight(Screen):
-	""" 
+	"""
 	
 	"""
-	def ch_sc(self):
-		change_it()
-		
-
-class subscreenone(Screen):
-	""" 
-	
-	"""	
-	def ch_sc(self):
-		change_it()
-
-class Navigation (MDNavigationDrawer):
 	pass
-
-# LAYOUTS (BOXLAYOUTS)
-"================================================================================================"
-
-class Hbox (MDBoxLayout):
-	pass
-
-class Vbox (MDBoxLayout):
-	pass
-
-
-# LIST ITEMS
-"================================================================================================"
+def swi
 
 
 
+
+
+# MAIN APP CLASS
+#________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 class MainApp (MDApp):
-	def web (self, string_link):
-		wb.open(string_link)
-		
 	
-	data= {"menu":"oll"}
 	
 	def build(self):
-		l=['Red', 'Purple', 'DeepPurple', 'Indigo', 'Blue', 'LightBlue', 'Cyan', 'Teal', 'Green', 'LightGreen', 'Orange', 'DeepOrange',]
-		self.theme_cls.primary_palette = "Cyan"
-		sc=ScreenManager()
-		sc.add_widget(MenuScreen(name="menu"))
-		sc.add_widget(profilescreenone(name="profile1"))				
-		sc.add_widget(profilescreentwo(name="profile2"))
-		sc.add_widget(profilescreenthree(name="profile3"))				
-		sc.add_widget(profilescreenfour(name="profile4"))				
-		sc.add_widget(profilescreenfive(name="profile5"))				
-		sc.add_widget(profilescreensix(name="profile6"))				
-		sc.add_widget(profilescreenseven(name="profile7"))				
-		sc.add_widget(profilescreeneight(name="profile8"))				
+		scrman = Manager()
 		return Manager()
 
 if __name__=="__main__":
