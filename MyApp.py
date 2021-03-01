@@ -19,18 +19,18 @@ from kivymd.app import MDApp
 
 from urls import*
 
-
-Builder.load_file("main.kv")
-Builder.load_file("screens/menu.kv")
-Builder.load_file("screens/screen1.kv")
-Builder.load_file("screens/screen2.kv")
-Builder.load_file("screens/screen3.kv")
-Builder.load_file("screens/screen4.kv")
-Builder.load_file("screens/screen5.kv")
-Builder.load_file("screens/screen6.kv")
-Builder.load_file("screens/screen7.kv")
-Builder.load_file("screens/screen8.kv")
-
+def load ():
+	Builder.load_file("main.kv")
+	Builder.load_file("screens/menu.kv")
+	Builder.load_file("screens/screen1.kv")
+	Builder.load_file("screens/screen2.kv")
+	Builder.load_file("screens/screen3.kv")
+	Builder.load_file("screens/screen4.kv")
+	Builder.load_file("screens/screen5.kv")
+	Builder.load_file("screens/screen6.kv")
+	Builder.load_file("screens/screen7.kv")
+	Builder.load_file("screens/screen8.kv")
+	
 class Manager(ScreenManager):
 	pass
 
@@ -41,56 +41,71 @@ class MenuScreen(Screen):
 	"""
 	
 	"""
+	
 	pass
 
 class profilescreenone(Screen):
 	"""
 	
 	"""
-	pass
+	def ch_sc (self):
+		switch()
+	
 
 class profilescreentwo(Screen):
 	"""
 	
 	"""
-	pass
+	def ch_sc (self):
+		switch()
 
 class profilescreenthree(Screen):
 	"""
 	
 	"""
-	pass
+	def ch_sc (self):
+		switch()
 
 class profilescreenfour(Screen):
 	"""
 	
 	"""
-	pass
+	def ch_sc (self):
+		switch()
 
 class profilescreenfive(Screen):
 	"""
 	
 	"""
-	pass
+	def ch_sc (self):
+		switch()
 
 class profilescreensix(Screen):
 	"""
 	
 	"""
-	pass
+	def ch_sc (self):
+		switch()
 
 class profilescreenseven(Screen):
 	"""
 	
 	"""
-	pass
+	def ch_sc (self):
+		switch()
 
 class profilescreeneight(Screen):
 	"""
 	
 	"""
-	pass
-def swi
+	def ch_sc (self):
+		switch()
+
+def switch ():
+	MDApp.get_running_app().root.current = "menu"
+	MDApp.get_running_app().root.transition = NoTransition()
+	MDApp.get_running_app().root.transition.direction="right"
+	#MDApp.get_running_app().root.transition.duration=0.1
 
 
 
@@ -99,7 +114,7 @@ def swi
 # MAIN APP CLASS
 #________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 class MainApp (MDApp):
-	
+	load()
 	
 	def build(self):
 		scrman = Manager()
