@@ -17,7 +17,32 @@ from kivymd.uix.navigationdrawer import MDNavigationDrawer, NavigationLayout
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.app import MDApp
 
-from urls import*
+from urls import *
+from screen import *
+
+def load_sub1 ():
+	Builder.load_file("screens/sub1/sub1_a.kv")
+	
+def load_sub2 ():
+	pass
+
+def load_sub3 ():
+	pass
+
+def load_sub4 ():
+	pass
+
+def load_sub5 ():
+	pass
+
+def load_sub6 ():
+	pass
+
+def load_sub7 ():
+	pass
+
+def load_sub8 ():
+	pass
 
 def load ():
 	Builder.load_file("main.kv")
@@ -30,6 +55,18 @@ def load ():
 	Builder.load_file("screens/screen6.kv")
 	Builder.load_file("screens/screen7.kv")
 	Builder.load_file("screens/screen8.kv")
+	load_sub1()
+	load_sub2()
+	load_sub3()
+	load_sub4()
+	load_sub5()
+	load_sub6()
+	load_sub7()
+	load_sub7()
+	
+	
+
+
 	
 class Manager(ScreenManager):
 	pass
