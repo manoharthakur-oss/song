@@ -1,3 +1,1 @@
-while True:
-	print("hello world")
-	input()
+print("hello world ! \n welcome to python programming language")
