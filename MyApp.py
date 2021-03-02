@@ -153,9 +153,19 @@ def switch ():
 class MainApp (MDApp):
 	load()
 	
+	def textit (self,path):
+		"""
+		this function is to load and display text
+		from different files
+		"""
+		file = open(path)
+		txt = file.read()
+		return txt
+	
 	def build(self):
 		scrman = Manager()
 		return Manager()
 
+#________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 if __name__=="__main__":
 	MainApp().run()
