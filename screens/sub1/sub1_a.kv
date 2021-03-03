@@ -16,18 +16,28 @@
 								spacing: 50
 								cols:1
 								height: self.minimum_height
-								size_hint_y: None							
-							
+								size_hint_y: None
+								
+								MDLabel:
+									markup: True
+									size_hint:1, None
+									size: self.texture_size
+									text:app.textit('txt_mat/txt_sub1/txt_sub1_a.txt')
+								
+								
 								MDCard:
 									pos_hint: {'center_x': .5, 'center_y': .5}				
 									size_hint: None,None
 									size: root.width-100,1000
 									ScrollView:
+										id:scrlv
 										CodeInput:
 											id : ci
 											readonly: True
-											size_x: 2000
+											size_hint: 1, None
 											text: app.textit('mat/intro/hellow.py')
+											height: max( (len(self._lines)+1) * self.line_height, scrlv.height)
+								
 								MDCard:
 									pos_hint: {'center_x': .5, 'center_y': .5}				
 									size_hint: None,None

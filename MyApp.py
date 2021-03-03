@@ -20,6 +20,8 @@ from kivymd.app import MDApp
 	
 from urls import *
 from screen import *
+from layout import *
+
 
 def load_sub1 ():
 	Builder.load_file("screens/sub1/sub1_a.kv")
@@ -47,6 +49,7 @@ def load_sub8 ():
 
 def load ():
 	Builder.load_file("main.kv")
+	Builder.load_file("layout.kv")
 	Builder.load_file("screens/menu.kv")
 	Builder.load_file("screens/screen1.kv")
 	Builder.load_file("screens/screen2.kv")
