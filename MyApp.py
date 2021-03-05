@@ -24,15 +24,19 @@ from lyout import *
 
 
 def load_sub1 ():
-	Builder.load_file("screens/sub1/sub1_a.kv")
+	'''function to load screens having English songs'''
+	Builder.load_file("screens/sub1/eng_a.kv")
 	
 def load_sub2 ():
+	'''function to load screens having  songs'''
 	pass
 
 def load_sub3 ():
+	'''function to load screens having songs'''
 	pass
 
 def load_sub4 ():
+	'''function to load screens having songs'''
 	pass
 
 def load_sub5 ():
@@ -51,7 +55,7 @@ def load ():
 	Builder.load_file("main.kv")
 	Builder.load_file("layout.kv")
 	Builder.load_file("screens/menu.kv")
-	Builder.load_file("screens/screen1.kv")
+	Builder.load_file("screens/eng.kv")
 	Builder.load_file("screens/screen2.kv")
 	Builder.load_file("screens/screen3.kv")
 	Builder.load_file("screens/screen4.kv")
