@@ -124,7 +124,3 @@ def switch (scr):
 	MDApp.get_running_app().root.transition = NoTransition()
 	MDApp.get_running_app().root.transition.direction="right"
 	#MDApp.get_running_app().root.transition.duration=0.1
-
-
-
-
