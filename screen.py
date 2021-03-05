@@ -18,17 +18,7 @@ def load_sub4 ():
 	'''function to load screens having songs'''
 	pass
 
-def load_sub5 ():
-	pass
 
-def load_sub6 ():
-	pass
-
-def load_sub7 ():
-	pass
-
-def load_sub8 ():
-	pass
 
 def load ():
 	Builder.load_file("main.kv")
@@ -46,11 +36,6 @@ def load ():
 	load_sub2()
 	load_sub3()
 	load_sub4()
-	load_sub5()
-	load_sub6()
-	load_sub7()
-	load_sub7()
-	
 	
 
 
