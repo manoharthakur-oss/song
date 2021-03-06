@@ -72,6 +72,68 @@ class profilescreeneight(Screen):
 		switch("menu")
 
 """ENGLISH SONGS"""
+'_______________________________'
+class subscreentwo(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreenthree(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+class subscreenfour(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreenfive(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreensix(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreenseven(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreeneight(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreennine(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreenten(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("profile1")
 
 
 
