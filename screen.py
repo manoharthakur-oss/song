@@ -115,6 +115,7 @@ class subscreenone (Screen):
 	"""
 	
 	"""
+	a = "abc"
 	def ch_sc (self):
 		switch("profile1")
 	
