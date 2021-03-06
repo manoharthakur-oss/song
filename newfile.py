@@ -1,5 +1,11 @@
-<subscreenone>
-	name: 'sube_a'
+c = 1
+
+for a in "bcdefghijklmnopqrstu":
+	c=c+1
+	
+	str = """
+<subscreen>
+	name: 'sube_"""+a+"""'
 	NavigationLayout:
 		ScreenManager:
 			Screen:
@@ -51,3 +57,7 @@
 											source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"		   
 								
 								
+"""
+	file = open("screens/sub1/eng_"+a+".kv","a")
+	file.write(str)
+	file.close()
