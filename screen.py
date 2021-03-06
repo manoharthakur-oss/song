@@ -110,7 +110,8 @@ class profilescreeneight(Screen):
 	def ch_sc (self):
 		switch("menu")
 		
-	
+#### SCREENS FOR ENGLISH SONGS
+#________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________	
 class subscreenone (Screen):
 	"""
 	
@@ -118,7 +119,490 @@ class subscreenone (Screen):
 	a = "abc"
 	def ch_sc (self):
 		switch("profile1")
+class subscreen2 (Screen):
+	"""
 	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen3 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen3 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen4 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen5 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen6 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen7 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen8 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen9 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen10 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen11 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen12 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen13 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen14 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen15 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen16 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen17 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen18 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen19 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreen20 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreen21 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+#### SCREENS FOR HINDI SONGS
+#________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________	
+class subscreen1_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+class subscreen2_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen3 (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen3_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen4_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen5_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen6_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen7_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen8_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen9_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen10_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen11_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen12_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen13_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen14_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen15_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen16_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen17_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen18_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen19_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+
+class subscreen20_h (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+
+#### SCREENS FOR OTHER SONGS
+#________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________	
+
+class subscreen1_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+class subscreen2_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen3_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen3_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen4_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen5_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen6_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen7_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen8_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen9_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen10_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen11_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen12_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen13_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen14_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen15_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen16_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+	
+class subscreen17_o (Screen):
+	"""
+	
+	"""
+	a = "abc"
+	def ch_sc (self):
+		switch("profile1")
+		
 
 def switch (scr):
 	MDApp.get_running_app().root.current = scr
