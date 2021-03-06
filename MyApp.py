@@ -4,6 +4,7 @@ import kivymd
 import PIL
 import webbrowser as wb
 import random
+from kivy.properties import StringProperty
 from kivy.lang.builder import Builder
 from kivy.uix.videoplayer import VideoPlayer
 from kivy.uix.boxlayout import BoxLayout
@@ -73,7 +74,7 @@ class Manager(ScreenManager):
 #________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 class MaiApp (MDApp):
 	load()
-	
+	lr_path= StringProperty()
 	def textit (self,path):
 		"""
 		this function is to load and display text

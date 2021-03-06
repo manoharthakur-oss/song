@@ -1,7 +1,11 @@
 from kivy.uix.screenmanager import Screen,ScreenManager,NoTransition, FadeTransition, RiseInTransition
-
-class subscreenone (Screen):
-	pass
+from kivymd.app import MDApp
+class subscreenone(Screen):
+	"""
+	
+	"""
+	def ch_sc (self):
+		switch("menu")
 
 class MenuScreen(Screen):
 	"""
@@ -15,7 +19,7 @@ class profilescreenone(Screen):
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
 	
 
 class profilescreentwo(Screen):
@@ -23,49 +27,53 @@ class profilescreentwo(Screen):
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
 
 class profilescreenthree(Screen):
 	"""
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
 
 class profilescreenfour(Screen):
 	"""
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
 
 class profilescreenfive(Screen):
 	"""
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
 
 class profilescreensix(Screen):
 	"""
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
 
 class profilescreenseven(Screen):
 	"""
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
 
 class profilescreeneight(Screen):
 	"""
 	
 	"""
 	def ch_sc (self):
-		switch()
+		switch("menu")
+
+"""ENGLISH SONGS"""
+
+
 
 def switch (screen_name):
 	MDApp.get_running_app().root.current = screen_name
