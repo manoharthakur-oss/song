@@ -3,6 +3,7 @@ import kivymd
 import PIL
 import webbrowser as wb
 import random
+from kivy.properties import StringProperty
 from kivy.lang.builder import Builder
 from kivy.uix.videoplayer import VideoPlayer
 from kivy.uix.boxlayout import BoxLayout
@@ -29,6 +30,7 @@ from lyout import *
 class MainApp (MDApp):
 	load()
 	
+	pat = StringProperty()
 	def textit (self,path):
 		"""
 		this function is to load and display text
