@@ -12,12 +12,19 @@
 						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
-								padding: 50
+								padding: 0
 								spacing: 50
 								cols:1
 								height: self.minimum_height
 								size_hint_y: None
 								
+								
+								
+								MDCard:
+									pos_hint: {'center_x': .5, 'center_y': .5}				
+									size_hint: None,None
+									size: root.width-100,1000
+									
 								MDLabel:
 									markup: True
 									size_hint:1, None
@@ -25,59 +32,4 @@
 									text:app.textit('txt_mat/txt_sub1/txt_sub1_a.txt')
 								
 								
-								MDCard:
-									pos_hint: {'center_x': .5, 'center_y': .5}				
-									size_hint: None,None
-									size: root.width-100,1000
-									ScrollView:
-										id:scrlv
-										CodeInput:
-											id : ci
-											readonly: True
-											size_hint: 1, None
-											text: app.textit('mat/intro/hellow.py')
-											height: max( (len(self._lines)+1) * self.line_height, scrlv.height)
 								
-								MDCard:
-									pos_hint: {'center_x': .5, 'center_y': .5}				
-									size_hint: None,None
-									size: root.width-100,root.height
-									SmartTile:
-										box_color:0,0,0,0
-										AsyncImage:
-											pos_hint: {'center_x': .5, 'center_y': .5}
-											size: 500,500
-											source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"		   
-								MDLabel:
-									size_hint:1, None
-									size: self.texture_size
-									text:"hello world and the best for you"*10
-								MDCard:
-									pos_hint: {'center_x': .5, 'center_y': .5}				
-									size_hint: None,None
-									size: root.width-100,root.height
-									SmartTile:
-										box_color:0,0,0,0
-										AsyncImage:
-											pos_hint: {'center_x': .5, 'center_y': .5}
-											size: 500,500
-											source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"							
-								MDCard:
-									pos_hint: {'center_x': .5, 'center_y': .5}				
-									size_hint: None,None
-									size: root.width-100,root.height
-									SmartTile:
-										box_color:0,0,0,0
-										AsyncImage:
-											pos_hint: {'center_x': .5, 'center_y': .5}
-											size: 500,500
-											source:"https://docs.google.com/drawings/d/e/2PACX-1vQ69SliAdrAkj2ydQ3c0Isdcy6TRs-dmLUDTizE02t87qnVOdIgMMZWJu8BpMh6ScR1U3toeV7Ziffq/pub?w=960&h=720"
-								MDCard:
-									pos_hint: {'center_x': .5, 'center_y': .5}				
-									size_hint: None,None
-									size: root.width-100,root.height
-									SmartTile:
-										box_color:0,0,0,0
-										AsyncImage:
-											pos_hint: {'center_x': .5, 'center_y': .5}
-											size: 500,500
