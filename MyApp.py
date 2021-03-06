@@ -1,3 +1,4 @@
+import os
 import logging
 import kivymd
 import PIL
@@ -37,7 +38,8 @@ def load_sub4 ():
 
 
 def load ():
-	Builder.load_file("main.kv")
+	Builder.load_file(os.path.join("main.kv"))
+	#Builder.load_file("main.kv")
 	Builder.load_file("layout.kv")
 	Builder.load_file("screens/menu.kv")
 	Builder.load_file("screens/screen1.kv")
@@ -140,7 +142,7 @@ def switch ():
 
 # MAIN APP CLASS
 #________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-class MainApp (MDApp):
+class MaiApp (MDApp):
 	load()
 	
 	def textit (self,path):
@@ -158,4 +160,4 @@ class MainApp (MDApp):
 
 #________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 if __name__=="__main__":
-	MainApp().run()
+	MaiApp().run()
