@@ -6,54 +6,37 @@
 				BoxLayout:
 					orientation: 'vertical'			  
 					MDToolbar:
-						title: 'Text Material'
+						title: 'LANGUAGES'
 						type: 'top'
 						left_action_items: [['menu',lambda x: nav_drawer.toggle_nav_drawer()]]
 						elevation:5
 					BoxLayout :
 						orientation: 'vertical'				
 						ScrollView:
-							GridLayout:
+							MDGridLayout:
 								cols: 1
-								
-								spacing: root.height/3
-								size_hint_y: None
-								height:self.minimum_height
-								MDList:
-									TwoLineAvatarIconListItem:
-										text:"Python"
-										font_style: 'H6'
-										secondary_text:'Introduction'
-										on_release:
-											root.manager.current="profile1"
-										ImageLeftWidget:
-											source:'alphaimg/music.ico'		
-									TwoLineAvatarIconListItem:
-										text:"Flow of Control"
-										font_style: 'H6'
-										secondary_text:"understanding algorithm"
-										on_release:
-											root.manager.current="profile3"
-										ImageLeftWidget:
-											source:'alphaimg/music.ico'
-									
-									TwoLineAvatarIconListItem:
-										text:"Datatypes"
-										font_style: 'H6'
-										secondary_text:'datatypes in python'
-										on_release:
-											root.manager.current="profile5"
-										ImageLeftWidget:
-											source:'alphaimg/music.ico'													
-										
-									TwoLineAvatarIconListItem:
-										text:"Operators"
-										font_style: 'H6'
-										secondary_text:'basic operators in python'
-										on_release:
-											root.manager.current="profile4"
-										ImageLeftWidget:
-											source:'alphaimg/music.ico'												
-										
-																				
-									
+								adaptive_height: True
+								padding: dp(4), dp(4)
+								spacing: dp(4)
+						
+								SmartTileWithLabel:
+									size_hint_y:None
+									height:1000
+									source: "alphaimg/english.png"
+									text:"[size=100]English[/size]"
+									on_release:
+										root.manager.current="profile1"						
+								SmartTileWithLabel:
+									size_hint_y:None
+									height:1000
+									source: "alphaimg/hindi.png"
+									text:"[size=100]Hindi[/size]"
+									on_release:
+										root.manager.current="profile1"
+								SmartTileWithLabel:
+									size_hint_y:None
+									height:1000
+									source: "alphaimg/oth.png"
+									text:"[size=100]Other[/size]"
+									on_release:
+										root.manager.current="profile1"
