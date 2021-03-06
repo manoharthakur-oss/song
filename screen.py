@@ -5,6 +5,27 @@ from kivymd.app import MDApp
 def load_sub1 ():
 	'''function to load screens having English songs'''
 	Builder.load_file("screens/sub1/eng_a.kv")
+	Builder.load_file("screens/sub1/eng_b.kv")
+	Builder.load_file("screens/sub1/eng_c.kv")
+	Builder.load_file("screens/sub1/eng_d.kv")
+	Builder.load_file("screens/sub1/eng_e.kv")
+	Builder.load_file("screens/sub1/eng_f.kv")
+	Builder.load_file("screens/sub1/eng_g.kv")
+	Builder.load_file("screens/sub1/eng_h.kv")
+	Builder.load_file("screens/sub1/eng_i.kv")
+	Builder.load_file("screens/sub1/eng_j.kv")
+	Builder.load_file("screens/sub1/eng_k.kv")
+	Builder.load_file("screens/sub1/eng_l.kv")
+	Builder.load_file("screens/sub1/eng_m.kv")
+	Builder.load_file("screens/sub1/eng_n.kv")
+	Builder.load_file("screens/sub1/eng_o.kv")
+	Builder.load_file("screens/sub1/eng_p.kv")
+	Builder.load_file("screens/sub1/eng_q.kv")
+	Builder.load_file("screens/sub1/eng_r.kv")
+	Builder.load_file("screens/sub1/eng_s.kv")
+	Builder.load_file("screens/sub1/eng_t.kv")
+	Builder.load_file("screens/sub1/eng_u.kv")
+	
 	
 
 def load_sub2 ():
@@ -115,7 +136,7 @@ class subscreenone (Screen):
 	a = "abc"
 	def ch_sc (self):
 		switch("profile1")
-class subscreen2 (Screen):
+class subscreentwo (Screen):
 	"""
 	
 	"""

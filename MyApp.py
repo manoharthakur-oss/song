@@ -1,5 +1,5 @@
 import logging
-import kivymd
+import kivy[md
 import PIL
 import webbrowser as wb
 import random
