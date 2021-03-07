@@ -4,6 +4,7 @@ import kivymd
 import PIL
 import webbrowser as wb
 import random
+from kivy.core.audio import SoundLoader
 from kivy.properties import StringProperty
 from kivy.lang.builder import Builder
 from kivy.uix.videoplayer import VideoPlayer
@@ -60,6 +61,10 @@ class Manager(ScreenManager):
 class MaiApp (MDApp):
 	load()
 	lyrics = StringProperty('app')
+	def pla (self):
+		sound=SoundLoader.load('occ.wav')
+		if sound:
+			sound.play()
 	def textit (self,path):
 		"""
 		this function is to load and display text
