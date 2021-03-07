@@ -6,45 +6,44 @@
 				BoxLayout:
 					orientation: 'vertical'
 					MDToolbar:
-						title: ''
+						title: app.tit
 						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
 						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
+								halign:'left'
 								padding: 25
-								spacing: 100
+								spacing: 50
 								cols:1
 								height: self.minimum_height
 								size_hint_y: None
 								
 								MDCard:
+									elevation:7
 									pos_hint: {'center_x': .5, 'center_y': .5}				
 									size_hint: None,None
 									size: root.width-50,root.height/3
 									SmartTile:
 										box_color:0,0,0,0
-										on_release:app.pla()
+										on_release:
+											app.pla(app.music)
+											app.music = 'no.mp3'
 										AsyncImage:
 											pos_hint: {'center_x': .5, 'center_y': .5}
+											user_font_size: "128sp"
 											size: 500,500
 											source:'https://docs.google.com/drawings/d/e/2PACX-1vRNgzr9Lg5WnD7lb-O0T0lCJUjJz2nK5lLiaEweRIcwmO0AedTh_2xWRkQ5Ap8AEW3fkQLs3sJWpDUd/pub?w=480&h=480'
-								
+
+								MDCard:
+									pos_hint: {'center_x': .5, 'center_y': .5}				
+									size_hint: None,None
+									size: root.width,root.height/15
+									SmartTile:
+										box_color:0,0,0,0
+										
 								MDLabel:
 									markup: True
 									size_hint:1, None
 									size: self.texture_size
 									text:app.lyrics
-								
-								
-								MDCard:
-									SmartTile:
-										box_color:0,0,0,0
-										AsyncImage:
-											
-								MDCard:
-									SmartTile:
-										box_color:0,0,0,0
-										AsyncImage:
-											
-								

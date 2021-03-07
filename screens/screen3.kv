@@ -1,3 +1,4 @@
+# OTHER LANGUAGES LEVEL 2 SCREEN
 <profilescreenthree>:
 	name: 'profile3'
 	NavigationLayout:
@@ -6,7 +7,7 @@
 				BoxLayout:
 					orientation: 'vertical'
 					MDToolbar:
-						title: 'introduction'
+						title: 'OTHER LANGUAGES'
 						left_action_items: [["arrow-left",lambda x:  root.ch_sc()]]
 					BoxLayout:
 						orientation: 'vertical'
@@ -16,43 +17,104 @@
 								height: self.minimum_height
 								size_hint_y: None
 								MDList:
-									ThreeLineAvatarIconListItem:
-										text:"Python if...else"
+									TwoLineAvatarIconListItem:
+										text:""
 										font_style: 'H6'
-										on_release:root.manager.current="profile3"
-										secondary_text: "you con download"
-										tertiary_text:"Python from python.org"
-										IconLeftWidget:
-											icon:"arrow-up-circle"
-									ThreeLineAvatarIconListItem:
-										text:"Python for loop"
+										on_release:
+											app.tit = self.text
+											app.music = 'aud/h/barbaad.mp3'
+											app.lyrics = app.textit("txt_mat/hin/abaad.txt")
+											root.manager.current="sub1_a"
+										secondary_text: " "
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"EK LADKI KO DEKHA"
 										font_style: 'H6'
-										on_release:root.manager.current="profile3"
-										secondary_text: "you con download"
-										tertiary_text:"Python from python.org"
-										IconLeftWidget:
-											icon:"arrow-up-circle"
-									ThreeLineAvatarIconListItem:
-										text:"Python while loop"
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/elkd.txt")
+											root.manager.current="sub1_a"
+										secondary_text: " "
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"GARMI"
 										font_style: 'H6'
-										on_release:root.manager.current="profile3"
-										secondary_text: "you con download"
-										tertiary_text:"Python from python.org"
-										IconLeftWidget:
-											icon:"arrow-up-circle"
-									ThreeLineAvatarIconListItem:
-										text:"Python break continue"
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/garmi.txt")
+											root.manager.current="sub1_a"
+										secondary_text: "Neha Kakkar, Badshah, Varun Dhawan"
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"HAWA BANKE"
 										font_style: 'H6'
-										on_release:root.manager.current="profile3"
-										secondary_text: "you con download"
-										tertiary_text:"Python from python.org"
-										IconLeftWidget:
-											icon:"arrow-up-circle"
-									ThreeLineAvatarIconListItem:
-										text:"Python pass"
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/hb.txt")
+											root.manager.current="sub1_a"
+										secondary_text: "Darshan Raval"
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"JAB KOI BAAT BIGAD JAYE"
 										font_style: 'H6'
-										on_release:root.manager.current="profile3"
-										secondary_text: "you con download"
-										tertiary_text:"Python from python.org"
-										IconLeftWidget:
-											icon:"arrow-up-circle"									
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/jkbbj.txt")
+											root.manager.current="sub1_a"
+										secondary_text: " "
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"LAG JA GALE"
+										font_style: 'H6'
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/ljg.txt")
+											root.manager.current="sub1_a"
+										secondary_text: "Lata Mangeshkar"
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"LUT GAYE"
+										font_style: 'H6'
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/lut.txt")
+											root.manager.current="sub1_a"
+										secondary_text: "Jubin Nautiyal"
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"MACHAYENGE"
+										font_style: 'H6'
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/mchg.txt")
+											root.manager.current="sub1_a"
+										secondary_text: "Emiway bantai"
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									TwoLineAvatarIconListItem:
+										text:"MERA DIL BHI KITNA PAHAL HAI"
+										font_style: 'H6'
+										on_release:
+											app.tit = self.text
+											app.lyrics = app.textit("txt_mat/hin/mdbkph.txt")
+											root.manager.current="sub1_a"
+										secondary_text: ""
+										ImageLeftWidget:
+											source:"alphaimg/music.ico"
+									
+									

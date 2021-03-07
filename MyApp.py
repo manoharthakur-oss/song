@@ -60,9 +60,11 @@ class Manager(ScreenManager):
 #________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 class MaiApp (MDApp):
 	load()
+	tit = StringProperty()
+	music = StringProperty()
 	lyrics = StringProperty('app')
-	def pla (self):
-		sound=SoundLoader.load('occ.wav')
+	def pla (self, music):
+		sound=SoundLoader.load(music)
 		if sound:
 			sound.play()
 	def textit (self,path):
