@@ -27,6 +27,7 @@ from lyout import *
 
 def load_sub1 ():
 	Builder.load_file("screens/sub1/sub1_a.kv")
+	Builder.load_file("screens/sub1/sub2_a.kv")
 	
 def load_sub2 ():
 	pass
