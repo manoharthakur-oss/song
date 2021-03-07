@@ -27,17 +27,7 @@ from lyout import *
 
 def load_sub1 ():
 	Builder.load_file("screens/sub1/sub1_a.kv")
-	Builder.load_file("screens/sub1/sub2_a.kv")
 	
-def load_sub2 ():
-	pass
-
-def load_sub3 ():
-	pass
-
-def load_sub4 ():
-	pass
-
 
 def load ():
 	Builder.load_file(os.path.join("main.kv"))
@@ -47,14 +37,8 @@ def load ():
 	Builder.load_file("screens/screen2.kv")
 	Builder.load_file("screens/screen3.kv")
 	Builder.load_file("screens/screen4.kv")
-	Builder.load_file("screens/screen5.kv")
-	Builder.load_file("screens/screen6.kv")
-	Builder.load_file("screens/screen7.kv")
-	Builder.load_file("screens/screen8.kv")
 	load_sub1()
-	load_sub2()
-	load_sub3()
-	load_sub4()
+	
 	
 	
 	
@@ -75,7 +59,7 @@ class Manager(ScreenManager):
 #________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 class MaiApp (MDApp):
 	load()
-	lr_path= StringProperty()
+	lyrics = StringProperty('app')
 	def textit (self,path):
 		"""
 		this function is to load and display text
