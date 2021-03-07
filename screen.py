@@ -71,75 +71,9 @@ class profilescreeneight(Screen):
 	def ch_sc (self):
 		switch("menu")
 
-"""ENGLISH SONGS"""
-'_______________________________'
-class subscreentwo(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-class subscreenthree(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-class subscreenfour(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-class subscreenfive(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-class subscreensix(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-class subscreenseven(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-class subscreeneight(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-class subscreennine(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-class subscreenten(Screen):
-	"""
-	
-	"""
-	def ch_sc (self):
-		switch("profile1")
-
-
 
 def switch (screen_name):
 	MDApp.get_running_app().root.current = screen_name
 	MDApp.get_running_app().root.transition = NoTransition()
 	MDApp.get_running_app().root.transition.direction="right"
 	#MDApp.get_running_app().root.transition.duration=0.1
-
