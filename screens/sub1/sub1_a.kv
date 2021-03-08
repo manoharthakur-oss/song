@@ -12,16 +12,18 @@
 						orientation: 'vertical'
 						ScrollView:
 							GridLayout:
+								id:g
 								halign:'left'
 								padding: 25
-								spacing: 50
+								spacing: 100
 								cols:1
 								height: self.minimum_height
 								size_hint_y: None
-								BoxLayout:
+								FloatLayout:
+									id:f
 									orientation:'vertical'
 									size_hint_y: None
-									size: root.width,root.height/2
+									size: root.width,root.height/3
 									MDCard:
 										elevation:7
 										pos_hint: {'center_x': .5, 'center_y': .5}				
@@ -37,18 +39,18 @@
 												size: 500,500
 												source:'https://docs.google.com/drawings/d/e/2PACX-1vRNgzr9Lg5WnD7lb-O0T0lCJUjJz2nK5lLiaEweRIcwmO0AedTh_2xWRkQ5Ap8AEW3fkQLs3sJWpDUd/pub?w=480&h=480'
 	
-									BoxLayout:
-										size_hint: None,None
-										size:root.width,320
-										BoxLayout
-										MDIconButton:
-											on_release:
-												self.icon = 'pause-circle'
-												app.pla(app.music)
-											icon:"play-circle"
-											user_font_size: "64sp"
-											theme_text_color: "Custom"
-											text_color:0,.01,1,1
+									
+									MDFloatingActionButton:
+										pos:800,g.height-(f.height+133)
+										md_bg_color:1,1,1,1
+										
+										on_release:
+											self.icon = 'pause-circle'
+											app.pla(app.music)
+										icon:"play-circle"
+										#user_font_size: "16sp"
+										theme_text_color: "Custom"
+										text_color:0,.01,1,1
 											
 										
 										
