@@ -60,6 +60,7 @@ class Manager(ScreenManager):
 #________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 class MaiApp (MDApp):
 	load()
+	back=StringProperty()
 	tit = StringProperty()
 	music = StringProperty()
 	lyrics = StringProperty('app')

@@ -4,8 +4,8 @@ class subscreenone(Screen):
 	"""
 	
 	"""
-	def ch_sc (self):
-		switch("profile1")
+	def ch_sc (self,s):
+		switch(s)
 
 class MenuScreen(Screen):
 	"""

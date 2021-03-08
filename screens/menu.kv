@@ -25,6 +25,7 @@
 									source: "alphaimg/english.png"
 									text:"[size=100]English[/size]"
 									on_release:
+										app.back='profile1'
 										root.manager.current="profile1"						
 								SmartTileWithLabel:
 									size_hint_y:None
@@ -32,6 +33,7 @@
 									source: "alphaimg/hindi.png"
 									text:"[size=100]Hindi[/size]"
 									on_release:
+										app.back='profile2'
 										root.manager.current="profile2"
 								SmartTileWithLabel:
 									size_hint_y:None
@@ -39,4 +41,6 @@
 									source: "alphaimg/oth.png"
 									text:"[size=100]Other[/size]"
 									on_release:
+										app.back='profile3'
 										root.manager.current="profile3"
+								
